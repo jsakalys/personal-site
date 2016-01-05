@@ -26,7 +26,7 @@ body {
 	width: 100px;
 	height: 100px;
 	margin: 0 auto;
-	border: solid 2px gray;
+	border: solid 3px gray;
 	border-radius: 100%;
 	background-color: white;
 	background-image: url('../img/me_cropped.jpg');
