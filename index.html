@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Julie Sakalys - Web Developer based in Seattle</title>
+		<title>Julie Sakalys - Seattle based Web Developer</title>
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap.vertical-tabs.min.css">
@@ -12,36 +12,37 @@
 		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Muli:300,500,400' type='text/css'>
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- Devicons -->
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 		<!-- My CSS -->
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 	<div class="row">
 	<!-- Tab Nav -->
-	<div class="col-sm-1 col-sm-offset-1"><!-- required for floating -->
-    	<!-- Nav tabs -->
+	<div id="tabs" class="col-sm-1 col-sm-offset-1">
 	    <ul class="nav nav-tabs tabs-left">
 	      <li class="active">
 	      	<a href="#tabs-1" data-toggle="tab">
-	      		<i class="fa fa-user"></i>
+	      		<i class="glyphicon glyphicon-user"></i>
 				Profile
 	      	</a>
 	      </li>
 	      <li>
 	      	<a href="#tabs-2" data-toggle="tab">
-				<i class="fa fa-tint"></i>
+				<i class="glyphicon glyphicon-tint"></i>
 				Projects
 	      	</a>
 	      </li>
 	      <li>
 	      	<a href="#tabs-3" data-toggle="tab">
-				<i class="fa fa-file"></i>
+				<i class="glyphicon glyphicon-list-alt"></i>
 				Resume
 	      	</a>
 	      </li>
 	      <li>
 	      	<a href="#tabs-4" data-toggle="tab">
-				<i class="fa fa-envelope"></i>
+				<i class="glyphicon glyphicon-pencil"></i>
 				Contact
 	      	</a>
 	      </li>
@@ -53,81 +54,313 @@
 	  	<!-- First Tab -->
 		<div id="tabs-1" class="tab-pane active card">
 			<div class="front">
-				<div id="main">
-					<div id="headshot"></div>
-					<div id="name">Julie Sakalys</div>
-					<div id="title">Web Developer</div>
-					<div id="location">
-						<i class="fa fa-map-marker"></i>
-						<span class="location">Seattle, WA</span>
-					</div>
-					<div id="social-media">
-						<div class="media-icon">
-							<span>TWITTER</span>
-							<span class="icon">
-								<a href="http://twitter.com/juliesakalys">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</span>
-						</div><div class="media-icon">
-							<span>GITHUB</span>
-							<span class="icon">
-								<a href="http://github.com/jsakalys">
-									<i class="fa fa-github-alt"></i>
-								</a>
-							</span>
-						</div><div class="media-icon">
-							<span>LINKEDIN</span>
-							<span class="icon">
-								<a href="http://linkedin.com/in/jsakalys">
-									<i class="fa fa-linkedin"></i>
-								</a>
-							</span>
+				<div id="profile" class="card-pane">
+					<div class="content">
+						<div class="row text-center">
+							<div id="headshot" class="center-block"></div>
+						</div>
+						<div class="row text-center">
+							<h2>Julie Sakalys</h2>
+							<h4>Web Developer</h4>
+						</div>
+						<div class="row text-center location">
+							<i class="fa fa-map-marker"></i>
+							<span>Seattle, WA</span>
+						</div>
+						<div class="row text-center">
+							<div class="col-xs-4">
+								<span class="icon-label">Twitter</span>
+								<span class="icon">
+									<a href="http://twitter.com/juliesakalys" target="_blank">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</span>
+							</div>
+							<div class="col-xs-4">
+								<span class="icon-label">Github</span>
+								<span class="icon">
+									<a href="http://github.com/jsakalys" target="_blank">
+										<i class="fa fa-github-alt"></i>
+									</a>
+								</span>
+							</div>
+							<div class="col-xs-4">
+								<span class="icon-label">Linkedin</span>
+								<span class="icon">
+									<a href="http://linkedin.com/in/jsakalys" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</span>
+							</div>
 						</div>
 					</div>
-					<div id="view-profile">VIEW PROFILE</div>
+					<div class="click-button" id="view-main">View Profile</div>
 				</div>
 			</div>
 			<div class="back">
-				<div id="about">
-				About me
+				<div class="card-pane">
+					<div class="content">
+						<div class="row">
+							<div class="col-xs-12">
+								<h1>
+									<span class="glyphicon glyphicon-user"></span>
+									Profile
+								</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<h3>About Me</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="text-justify">
+									I am a Full Stack Developer aspiring toward a junior role in UI Development & Engineering. I thrive in fast-paced, high stakes environments where I can tackle complex front & back-end projects using the latest frameworks/libraries alongside a motivated, energized team. An adaptable and quick learner, I am stimulated by the immediate challenges faced when implementing cutting-edge, fluid web technologies for optimum speed and scalability.
+								</p>
+								<p class="text-justify">
+									I'm a huge proponent of open source and the democratization of technology, and have an innate desire to support creative individuals and other developers in their creative/technical pursuits. I'm passionate about UI and love making skins for native apps in my free time!
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<h3>Languages & Frameworks</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">HTML5</span>
+								<span class="icon">
+									<i class="devicon-html5-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">CSS3</span>
+								<span class="icon">
+									<i class="devicon-css3-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">JavaScript</span>
+								<span class="icon">
+									<i class="devicon-javascript-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">jQuery</span>
+								<span class="icon">
+									<i class="devicon-jquery-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Bootstrap</span>
+								<span class="icon">
+									<i class="devicon-bootstrap-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Sass</span>
+								<span class="icon">
+									<i class="devicon-sass-plain"></i>
+								</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Ruby</span>
+								<span class="icon">
+									<i class="devicon-ruby-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Rails</span>
+								<span class="icon">
+									<i class="devicon-rails-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Node</span>
+								<span class="icon">
+									<i class="devicon-nodejs-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Angular</span>
+								<span class="icon">
+									<i class="devicon-angularjs-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">React</span>
+								<span class="icon">
+									<i class="devicon-react-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">D3</span>
+								<span class="icon">
+									<i class="devicon-d3js-plain"></i>
+								</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<h3>Development Environment</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Psql</span>
+								<span class="icon">
+									<i class="devicon-postgresql-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Mongo DB</span>
+								<span class="icon">
+									<i class="devicon-mongodb-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Chrome</span>
+								<span class="icon">
+									<i class="devicon-chrome-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Git</span>
+								<span class="icon">
+									<i class="devicon-git-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Gulp</span>
+								<span class="icon">
+									<i class="devicon-gulp-plain"></i>
+								</span>
+							</div>
+							<div class="col-sm-2 col-xs-4 text-center">
+								<span class="icon-label">Heroku</span>
+								<span class="icon">
+									<i class="devicon-heroku-plain"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="click-button" id="view-main">Go Back</div>
 				</div>
 			</div>
 		</div>
 		<!-- Second Tab -->
 		<div id="tabs-2" class="tab-pane card">
 			<div class="front">
-				<div id="main">
-					<div id="headshot"></div>
-					<div id="name">Beth Burger</div>
-					<div id="title">Web Developer</div>
-					<div id="location">
-						<i class="fa fa-map-marker"></i>
-						<span class="location">Seattle, WA</span>
-					</div>
-					<div id="social-media">
-						<div class="media-icon">
-							<span>TWITTER</span>
-							<span class="icon">
-								<i class="fa fa-twitter"></i>
-							</span>
-						</div><div class="media-icon">
-							<span>GITHUB</span>
-							<span class="icon">
-								<i class="fa fa-code-fork"></i>
-							</span>
-						</div><div class="media-icon">
-							<span>LINKEDIN</span>
-							<span class="icon">
-								<i class="fa fa-linkedin"></i>
-							</span>
+				<div class="card-pane">
+					<div class="content">
+						<div class="row">
+							<div class="col-xs-12">
+								<h1>
+									<span class="glyphicon glyphicon-tint"></span>
+									Projects
+								</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<h3>
+									<a href="http://compactia.herokuapp.com" target="_blank">
+										Compactia
+									</a>
+									<small>
+										<i class="devicon-nodejs-plain"></i>
+										<i class="devicon-html5-plain"></i>
+										<i class="devicon-css3-plain"></i>
+										<i class="devicon-jquery-plain"></i>
+										<i class="devicon-postgresql-plain"></i>
+										<i class="devicon-heroku-plain"></i>
+									</small>
+									<small class="pull-right">
+										<a href="http://compactia.herokuapp.com" target="_blank">
+											Go <i class="fa fa-external-link"></i>
+										</a>
+									</small>
+								</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="text-justify">
+									Compactia was designed to be a project management tool for table-top role players and story gamers. My goal is to one day make it a one-stop shop for campaign management.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<h3>
+									<a href="http://explor.herokuapp.com" target="_blank">
+										Explor
+									</a>
+									<small>
+										<i class="devicon-ruby-plain"></i>
+										<i class="devicon-rails-plain"></i>
+										<i class="devicon-html5-plain"></i>
+										<i class="devicon-css3-plain"></i>
+										<i class="devicon-jquery-plain"></i>
+										<i class="devicon-postgresql-plain"></i>
+										<i class="devicon-heroku-plain"></i>
+									</small>
+									<small class="pull-right">
+										<a href="http://explor.herokuapp.com" target="_blank">
+											Go <i class="fa fa-external-link"></i>
+										</a>
+									</small>
+								</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="text-justify">
+									Explor is a concept app that lets a user enter a location and receive all the need-to-know about its locality, including weather, places to eat, cultural sites, and nightlife.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<h3>
+									<a href="http://github.com/jsakalys/fitBuddi" target="_blank">
+										FitBuddi
+									</a>
+									<small>
+										<i class="devicon-angularjs-plain"></i>
+										<i class="devicon-html5-plain"></i>
+										<i class="devicon-css3-plain"></i>
+										<i class="devicon-sass-plain"></i>
+										<i class="devicon-jquery-plain"></i>
+									</small>
+									<small class="pull-right">
+										<a href="http://github.com/jsakalys/fitBuddi" target="_blank">
+											Go <i class="fa fa-external-link"></i>
+										</a>
+									</small>
+								</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="text-justify">
+									FitBuddi is a virtual pet that doubles as a fitness companion. Based on how many steps you take in a day, your fitBuddi's health will be high or low, giving users a visual representation of their own condition.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div id="view-profile">VIEW PROFILE</div>
+					<div class="click-button" id="view-main">
+						<span class="glyphicon glyphicon-unshare"></span>
+						Go Back
+					</div>
 				</div>
 			</div>
 			<div class="back">
-				<div id="about">
+				<div id="about" class="content">
 				About me
 				</div>
 			</div>
@@ -135,7 +368,7 @@
 		<!-- Third Tab -->
 		<div id="tabs-3" class="tab-pane card">
 			<div class="front">
-				<div id="main">
+				<div id="main" class="content">
 					<div id="headshot"></div>
 					<div id="name">Ara Lawrence</div>
 					<div id="title">Web Developer</div>
@@ -166,7 +399,7 @@
 				</div>
 			</div>
 			<div class="back">
-				<div id="about">
+				<div id="about" class="content">
 				About me
 				</div>
 			</div>
@@ -174,7 +407,7 @@
 		<!-- Fourth Tab -->
 		<div id="tabs-4" class="tab-pane card">
 			<div class="front">
-				<div id="main">
+				<div id="main" class="content">
 					<div id="headshot"></div>
 					<div id="name">Todd Best</div>
 					<div id="title">Web Developer</div>
@@ -204,8 +437,7 @@
 				</div>
 			</div>
 			<div class="back">
-				<div id="about">
-				About me
+				<div id="about" class="content">
 				</div>
 			</div>
 		</div>

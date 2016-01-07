@@ -7,7 +7,7 @@ $(document).ready(function(){
 		trigger: 'manual'
 	});
 
-	$('#view-profile').on('click', function(){
+	$('.click-button').on('click', function(){
 		$('.card').flip('toggle');
 	});
 
