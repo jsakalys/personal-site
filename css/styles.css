@@ -259,6 +259,14 @@ h4 {
 		display: none;
 	}
 
+	#profile {
+		background: white;
+	}
+
+	#headshot {
+		margin-top: 20px;
+	}
+
 	#mobile-tabs {
 		display: block;
 		float: left;
