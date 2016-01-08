@@ -265,6 +265,7 @@ h4 {
 		z-index: 1;
 		padding: 0px;
 		background-color: lightGray;
+		font-size: 12px;
 	}
 
 	#mobile-tabs > ul > li > a {
