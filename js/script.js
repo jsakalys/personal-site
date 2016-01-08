@@ -1,14 +1,15 @@
 $(document).ready(function(){
 
-    // $('#tabs').tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
-    // $('#tabs li').removeClass('ui-corner-top').addClass('ui-corner-left');
-
 	$('.card').flip({
 		trigger: 'manual'
 	});
 
-	$('.click-button').on('click', function(){
-		$('.card').flip('toggle');
+	$('.profile-pane.click-button').on('click', function(){
+		$('#tabs-1.card').flip('toggle');
+	});
+
+	$('.contact-pane.click-button').on('click', function(){
+		$('#tabs-4.card').flip('toggle');
 	});
 
 });

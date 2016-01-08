@@ -1,5 +1,5 @@
 body {
-	background: lightGray;
+	background: #ccc;
 	padding: 30px;
 	font-family: 'Muli', sans-serif;
 }
@@ -12,14 +12,14 @@ a:visited {
 	color: #2ED8FB;
 }
 
+a:active {
+	color: orange;
+	text-decoration: none;
+}
+
 a:hover {
 	color: #1DC7EA;
 	text-decoration: none;
-	font-weight: bold;
-}
-
-h1, h2, h3, h4, p {
-	padding: 0px 25px;
 }
 
 h1 {
@@ -51,13 +51,37 @@ h4 {
 	color: #999;
 }
 
-.col-sm-1 {
+.nav-tabs>li>a {
+	background-color: white;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover {
+	font-weight: bold;
+	color: #666;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+#tabs, #panes {
+	padding: 0px 0px;
+}
+
+#submit-button {
+	margin-top: 15px;
+}
+
+
+/*.col-sm-1 {
 	padding: 0px;
 }
 
 .col-sm-8 {
 	padding: 0px;
-}
+}*/
 
 .nav-tabs {
 	margin-top: 10px;
@@ -74,33 +98,40 @@ h4 {
 	background-color: white;
 	border-radius: 5px;
 	width: 100%;
+	overflow: hidden;
 }
 
 .content {
-	padding-bottom: 75px;
 	height: 500px;
 	overflow-x: hidden;
 	overflow-y: auto;
+	padding-bottom: 25px;
+}
+
+.title {
+	margin-top: -10px;
 }
 
 .location {
-	margin-top: 30px;
-	margin-bottom: 45px;
+	margin-top: 25px;
+	margin-bottom: 35px;
 }
 
 #profile {
-	background: linear-gradient(170deg, rgba(157,213,58,0) 40%,rgba(161,213,79,0) 40%,rgba(255,255,255,1) 41%,rgba(255,255,255,1) 100%), url('../img/manhattan.jpg');
+	background: linear-gradient(170deg, rgba(157,213,58,0) 35%,rgba(161,213,79,0) 35%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 100%), url('../img/pexels-photo.jpg');
+	background-size: 100%;
+	background-position: fixed;
 }
 
 #headshot {
 	background-color: white;
 	background-image: url('../img/me_cropped.jpg');
 	background-size: cover;
-	border: solid 3px gray;
+	border: solid 3px lightGray;
 	border-radius: 100%;
-	width: 100px;
-	height: 100px;
-	margin-top: 150px;
+	width: 150px;
+	height: 150px;
+	margin-top: 100px;
 }
 
 .icon-label {
@@ -139,7 +170,7 @@ h4 {
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
 	body {
 		padding: 0px;
 		overflow: hidden;
@@ -148,9 +179,11 @@ h4 {
 	.card-pane {
 		height: 100vh;
 		position: relative;
+		border-radius: 0px;
 	}
 
 	.content {
+		padding-bottom: 75px;
 		height: 100vh;
 	}
 
