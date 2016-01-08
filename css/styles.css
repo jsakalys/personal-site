@@ -259,12 +259,21 @@ h4 {
 		display: none;
 	}
 
+	#profile {
+		background: white;
+	}
+
+	#headshot {
+		margin-top: 20px;
+	}
+
 	#mobile-tabs {
 		display: block;
 		float: left;
 		z-index: 1;
 		padding: 0px;
 		background-color: lightGray;
+		font-size: 12px;
 	}
 
 	#mobile-tabs > ul > li > a {
