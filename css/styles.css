@@ -149,7 +149,7 @@ h4 {
 	-moz-box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
 	box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
 	background-color: white;
-	border-radius: 0px;
+	border-radius: 5px;
 	width: 100%;
 	overflow-y: hidden;
 	overflow-x: hidden;
@@ -187,7 +187,7 @@ h4 {
 	border-radius: 100%;
 	width: 150px;
 	height: 150px;
-	margin-top: 100px;
+	margin-top: 20vh;
 }
 
 #submit-button {
@@ -213,8 +213,8 @@ h4 {
 	width: 100%;
 	background-color: #ff920a;
 	cursor: pointer;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	height: 50px;
 	line-height: 50px;
 	vertical-align: middle;
@@ -290,7 +290,7 @@ h4 {
 	}
 
 	#headshot {
-		margin-top: 20px;
+		margin-top: 10vh;
 	}
 
 	#mobile-tabs {
