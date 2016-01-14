@@ -60,6 +60,7 @@ h4 {
 .btn.btn-info {
 	width: 100%;
 	color: #05abe0;
+	padding: 10px;
 	border: solid 3px #05abe0;
 	background: transparent;
 	border-radius: 10px;
@@ -67,6 +68,7 @@ h4 {
 
 .btn.btn-info:hover {
 	color: #87e0fd;
+	padding: 10px;
 	border: solid 3px #87e0fd;
 	background: transparent;
 	border-radius: 10px;
