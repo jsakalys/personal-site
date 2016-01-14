@@ -59,7 +59,6 @@ h4 {
 
 .btn.btn-info {
 	width: 100%;
-	padding: 10px;
 	color: #05abe0;
 	border: solid 3px #05abe0;
 	background: transparent;
@@ -67,7 +66,6 @@ h4 {
 }
 
 .btn.btn-info:hover {
-	padding: 10px;
 	color: #87e0fd;
 	border: solid 3px #87e0fd;
 	background: transparent;
@@ -217,6 +215,9 @@ h4 {
 	text-transform: uppercase;
 	text-align: center;
 	color: white;
+	-webkit-box-shadow: 0px 0px 100px 0px rgba(130,130,130,.5);
+	-moz-box-shadow: 0px 0px 100px 0px rgba(130,130,130,.5);
+	box-shadow: 0px 0px 100px 0px rgba(130,130,130,.5);
 }
 
 .click-button:hover {
@@ -303,6 +304,14 @@ h4 {
 	#mobile-tabs > ul > li.active > a {
 		border-bottom: 0px;
 	}
+
+	.click-button {
+	background: #ffaf4b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffaf4b 0%, #ff920a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 ); /* IE6-9 */
+}
 
 
 }

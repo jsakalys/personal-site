@@ -17,6 +17,9 @@ $(document).ready(function(){
 		$('#tabs-1.card').flip('toggle');
 	});
 
+	$('.projects-pane.click-button').on('click', function(){
+		$('#tabs-2.card').flip('toggle');
+	});
 
 	$('.resume-pane.click-button').on('click', function(){
 		$('#tabs-3.card').flip('toggle');
