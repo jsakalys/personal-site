@@ -5,7 +5,7 @@ body {
 
 /* Links */
 
-a:link {
+a, link, a:link {
 	color: #05abe0;
 	font-weight: bold;
 }
@@ -92,18 +92,18 @@ h4 {
 	margin-top: 30px;
 }
 
-.nav-tabs>li {
+.nav-tabs > li {
 	margin: 0px;
-}
-
-#mobile-tabs > .nav-tabs > li > a {
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
 }
 
 #tabs > .nav-tabs > li > a {
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
+}
+
+#mobile-tabs > .nav-tabs > li > a {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 }
 
 .nav-tabs > li > a, .nav-tabs > li.active > a {
@@ -142,7 +142,7 @@ h4 {
 	-moz-box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
 	box-shadow: 0px 0px 5px 0px rgba(153,153,153,1);
 	background-color: white;
-	border-radius: 5px;
+/*	border-radius: 5px;*/
 	width: 100%;
 	overflow-y: hidden;
 	overflow-x: hidden;
@@ -153,15 +153,6 @@ h4 {
 	overflow-x: hidden;
 	overflow-y: auto;
 	padding-bottom: 25px;
-}
-
-.title {
-	margin-top: -10px;
-}
-
-.location {
-	margin-top: 25px;
-	margin-bottom: 35px;
 }
 
 #profile {
@@ -188,6 +179,21 @@ h4 {
 	margin-bottom: 15px;
 }
 
+.title {
+	margin-top: -10px;
+}
+
+.location {
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
+.seattle {
+	border: solid 2px #dfdfdf;
+	padding: 3px 6px;
+	border-radius: 5px;
+}
+
 .icon {
 	display: block;
 	font-size: 28px;
@@ -206,8 +212,8 @@ h4 {
 	width: 100%;
 	background-color: #ff920a;
 	cursor: pointer;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+/*	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;*/
 	height: 50px;
 	line-height: 50px;
 	vertical-align: middle;
